@@ -202,7 +202,7 @@ hr {
     top: 60px;
     left: 0;
     width: 100%;
-    z-index: 0;
+    z-index: 99;
 }
 
 @media screen and (min-width: 240px) {
@@ -415,7 +415,7 @@ h3.widget-title {
 }
 
 #templatemo_services {
-    background: url(../images/templatemo_header_1.jpg);
+    background: url(/images/templatemo_header_1.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -423,7 +423,7 @@ h3.widget-title {
 }
 
 #templatemo_events {
-    background: url(../images/templatemo_header_2.jpg);
+    background: url(/images/templatemo_header_2.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -431,7 +431,7 @@ h3.widget-title {
 }
 
 #templatemo_about {
-    background: url(../images/templatemo_header_3.jpg);
+    background: url(/images/templatemo_header_3.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -439,7 +439,7 @@ h3.widget-title {
 }
 
 #templatemo_contact {
-    background: url(../images/templatemo_header_4.jpg);
+    background: url(/images/templatemo_header_4.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;

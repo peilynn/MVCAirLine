@@ -1,831 +1,143 @@
 ﻿<!DOCTYPE html>
-@*<html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <meta charset="utf-8">
+    <title>MVC Air Line</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="templatemo">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/font-awesome.css">
+    <link rel="stylesheet" href="/Content/animate.css">
+    <link rel="stylesheet" href="/Content/templatemo_misc.css">
+    <link rel="stylesheet" href="/Content/templatemo_style.css">
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="site-header">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <div class="main-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-10">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/images/logo.png" alt="travel html5 template" title="travel html5 template">
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="col-md-8 col-sm-6 col-xs-2">
+                        <div class="main-menu">
+                            <ul class="visible-lg visible-md">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="services">Services</a></li>
+                                <li><a href="events">Events</a></li>
+                                <li><a href="about">About Us</a></li>
+                                <li><a href="contact">Contact</a></li>
+                            </ul>
+                            <a href="#" class="toggle-menu visible-sm visible-xs">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+            <div class="row">
+                <div class="col-md-12 visible-sm visible-xs">
+                    <div class="menu-responsive">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    @RenderBody()
+
+    <div class="partner-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item">
+                        <img src="/images/partners/partner1.png" alt="">
+                    </div> 
+                </div> 
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item">
+                        <img src="/images/partners/partner2.png" alt="">
+                    </div> 
+                </div> 
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item">
+                        <img src="/images/partners/partner3.png" alt="">
+                    </div> 
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item">
+                        <img src="/images/partners/partner1.png" alt="">
+                    </div>
+                </div> 
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item">
+                        <img src="/images/partners/partner2.png" alt="">
+                    </div>
+                </div> 
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="partner-item last">
+                        <img src="/images/partners/partner3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-</body>
-</html>*@
-
-<html class="no-js" >
-<!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<title>Travel Responsive Web Template</title>
-	<meta name="description" content="">
-	<!--
-	Travel Template
-	http://www.templatemo.com/tm-409-travel
-	-->
-	<meta name="viewport" content="width=device-width">
-	<meta name="author" content="templatemo">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="~/css/bootstrap.min.css">
-	<link rel="stylesheet" href="~/css/font-awesome.css">
-	<link rel="stylesheet" href="~/css/animate.css">
-	<link rel="stylesheet" href="~/css/templatemo_misc.css">
-	<link rel="stylesheet" href="~/css/templatemo_style.css">
-
-	<!--for 訂票頁面外掛 資料夾:Flight Ticket Booking a Flat Responsive Widget Template   w3layouts_files-->
-	
-	<link rel="stylesheet" href="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/style.css">
-	<link href="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/css.css" rel="stylesheet" type="text/css">
-	<link href="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/css_002.css" rel="stylesheet" type="text/css">
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-	<!--for 訂票頁面外掛 end-->
-	<!--++-->
-	<!--<script src="Scripts/bootstrap.min.js"></script>
-	<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>-->
-
-	<style>
-		div.test {
-			display: -webkit-flex; /* Safari */
-			-webkit-flex-wrap: wrap; /* Safari 6.1+ */
-			display: flex;
-			flex-wrap: wrap;
-		}
-		.form{
-			position: absolute;
-			top: 0px;
-
-			width: 970px;
-			height: 400px;
-			border: 3px solid #73AD21;
-			z-index: 500;
-		}
-
-		img.positions {
-			position: relative
-		}
-
-		#ulID {
-			display: none;
-			margin: 0px;
-			list-style-type: none;
-			padding-left: 0px;
-			border: 1px solid green;
-			width: 408px;
-		
-		}
-
-		#ulID2 {
-			display: none;
-			margin: 0px;
-			list-style-type: none;
-			padding-left: 0px;
-			border: 1px solid green;
-			width: 408px;
-			position: relative;
-			z-index: 5 !important;
-		}
-
-		#ulID3 {
-			display: none;
-			margin: 0px;
-			list-style-type: none;
-			padding-left: 0px;
-			border: 1px solid green;
-			width: 408px;
-		}
-
-		#ulID4 {
-			display: none;
-			margin: 0px;
-			list-style-type: none;
-			padding-left: 0px;
-			border: 1px solid green;
-			width: 408px;
-			position: relative;
-			z-index: 5 !important;
-		}
-
-		#ulID > li {
-			padding: 5px;
-			z-index:10000;
-			
-		}
-
-		#ulID2 > li {
-			padding: 5px;
-
-		}
-
-		#ulID3 > li {
-			padding: 5px;
-		}
-
-		#ulID4 > li {
-			padding: 5px;
-		}
-
-		.s1 {
-			background-color: lightgreen;
-		}
-		.content {
-			margin: auto;
-			padding: 10px;
-		}
-	</style>
-
-	<!--<script src="js/vendor/jquery-1.11.0.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>-->
-	<script src="~/Scripts/jquery-3.0.0.min.js"></script>
-	<script src="~/js/bootstrap.js"></script>
-	<script src="~/js/plugins.js"></script>
-	<script src="~/js/main.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#form1').submit(function (e) {
-				if ($('#childcountinput').val() >= 0 && $('#Adultcountinput').val() > 0) {
-					$('#DepartureCitytxt').val($('#DepartureCitytxt').val().substr(0, 3));
-					$('#DestinationCitytxt').val($('#DestinationCitytxt').val().substr(0, 3));
-					e.preventDefault();
-
-					//日期轉格式
-					var date = $('#datepicker').val();
-					var arrays = date.split("/");
-					$('#datepicker').val(arrays[2] + "-" + arrays[0] + "-" + arrays[1]);
-					var date1 = $('#datepicker1').val();
-					var arrays1 = date1.split("/");
-					$('#datepicker1').val(arrays1[2] + "-" + arrays1[0] + "-" + arrays1[1]);
-
-
-					//Querystring轉Json物件
-					var str = '{';
-
-					var tests = $("#form1").serializeArray();
-
-					$.each(tests, function (idx, value) {
-						var Item = '"' + value.name + '"';
-						var value = '"' + value.value + '"';
-
-						if (idx == tests.length - 1) {
-							str = str + Item;
-							str = str + ":";
-							str = str + value;
-							str = str + ",";
-
-							str = str + '"InfantCount"' + ':' + '"0","Type":"1"';
-							str = str + '}';
-							return false;
-						}
-
-
-						str = str + Item;
-						str = str + ":";
-						str = str + value;
-
-
-						str = str + ",";
-
-
-					});
-
-					alert(str);
-
-
-					$this = $(this);
-					// var url = rewrite_interval_qstring();
-					var url = $this.attr('action') + "?request="+str;
-					window.location.href = url;
-
-
-
-					//var url = "http://124.9.7.222/ggogobfm/Skyscanner/Search?request=";
-					//var completestr = url + str;
-					//var JsonData;
-					//console.log(completestr);
-
-					//$.getJSON(url, str, function (data) {
-
-					//	JsonData = data;
-					//});
-
-
-
-					
-
-
-				}
-				else {
-
-					alert('大人人數必填，請重新輸入');
-					e.preventDefault();
-				}
-
-				//window.location.href = "test.html";
-
-
-			});
-		});
-	</script>
-
-
-</head>
-<body class="content" style="width:1280px;height:780px;">
-
-	<!--<script src="Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/jquery_002.js"></script><script src="Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/monetization.js" type="text/javascript"></script>-->
-	<!--<script>
-	(function(){
-		if(typeof _bsa !== 'undefined' && _bsa) {
-			// format, zoneKey, segment:value, options
-			_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-		}
-	})();
-	</script>
-	<script>
-	(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-		// format, zoneKey, segment:value, options
-		_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-	}
-	})();
-	</script>
-	<script>
-	(function(){
-		if(typeof _bsa !== 'undefined' && _bsa) {
-			// format, zoneKey, segment:value, options
-			_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
-		}
-	})();
-	</script>-->
-	<!--廣告-->
-	<!--<script type="text/javascript" src="Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/adsInternalReferral.js"><script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-30027142-1', 'w3layouts.com');
-	  ga('send', 'pageview');
-	</script>-->
-	<!--[if lt IE 7]>
-		<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-	<![endif]-->
-
-	<div class="site-header" style="position:relative;">
-		<div class="container">
-			<div class="main-header">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-10">
-						<div class="logo">
-							<a href="#">
-								<img src="~/images/logo.png" alt="travel html5 template" title="travel html5 template">
-							</a>
-						</div> <!-- /.logo -->
-					</div> <!-- /.col-md-4 -->
-					<div class="col-md-8 col-sm-6 col-xs-2">
-						<div class="main-menu">
-							<ul class="visible-lg visible-md">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="events.html">Events</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-							<a href="#" class="toggle-menu visible-sm visible-xs">
-								<i class="fa fa-bars"></i>
-							</a>
-						</div> <!-- /.main-menu -->
-					</div> <!-- /.col-md-8 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.main-header -->
-			<div class="row">
-				<div class="col-md-12 visible-sm visible-xs">
-					<div class="menu-responsive">
-						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="events.html">Events</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div> <!-- /.menu-responsive -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.site-header -->
-	<!--訂票區塊-->
-	
-
-	  @*view的地方*@
-
-		@RenderBody()
-
-
-
-
-		
-
-
-	<div class="container" style="position:relative;">
-		<div class="row">
-			<div class="owl-carousel" style="position:relative;z-index:500">
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>Italy</h4>
-						</div>
-						<img src="~/images/destination_1.jpg" alt="destination 1">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Rome, Milan, Naples</h5>
-						<span>SILVER HOTEL, 4 NIGHTS, 5 STARS</span>
-						<a href="#" class="price-btn">$1,700 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>France</h4>
-						</div>
-						<img src="~/images/destination_2.jpg" alt="destination 2">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Paris, Marseille, Lyon</h5>
-						<span>NEW PALACE, 5 NIGHTS, 5 STARS</span>
-						<a href="#" class="price-btn">$2,200 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>Germany</h4>
-						</div>
-						<img src="~/images/destination_3.jpg" alt="destination 3">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Berlin, Hamburg, Munich</h5>
-						<span>LUXE HOTEL, 5 NIGHTS, 6 STARS</span>
-						<a href="#" class="price-btn">$3,300 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>Spain</h4>
-						</div>
-						<img src="~/images/destination_4.jpg" alt="destination 4">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Madrid, Bercelona, Valencia</h5>
-						<span>GOOD HOTEL, 4 NIGHTS, 6 STARS</span>
-						<a href="#" class="price-btn">$4,400 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>Netherlands</h4>
-						</div>
-						<img src="~/images/destination_5.jpg" alt="destination 5">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Amsterdam, Delft, The Hague</h5>
-						<span>BEST HOTEL, 6 NIGHTS, 7 STARS</span>
-						<a href="#" class="price-btn">$5,500 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-				<div class="list-item">
-					<div class="list-thumb">
-						<div class="title">
-							<h4>Switzerland</h4>
-						</div>
-						<img src="~/images/destination_6.jpg" alt="destination 6">
-					</div> <!-- /.list-thumb -->
-					<div class="list-content">
-						<h5>Zürich, Geneva, Basel</h5>
-						<span>NEW HOTEL, 7 NIGHTS, 7 STARS</span>
-						<a href="#" class="price-btn">$6,600 Book Now</a>
-					</div> <!-- /.list-content -->
-				</div> <!-- /.list-item -->
-			</div> <!-- /.our-listing -->
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
-
-	<div class="middle-content"></div>
-
-	<div class="partner-list" style="position:relative;top:0px">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item">
-						<img src="~/images/partners/partner1.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item">
-						<img src="~/images/partners/partner2.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item">
-						<img src="~/images/partners/partner3.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item">
-						<img src="~/images/partners/partner1.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item">
-						<img src="~/images/partners/partner2.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<div class="partner-item last">
-						<img src="~/images/partners/partner3.png" alt="">
-					</div> <!-- /.partner-item -->
-				</div> <!-- /.col-md-2 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.partner-list -->
-
-
-
-	<div class="site-footer" style="position:relative;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="footer-logo">
-						<a href="index.html">
-							<img src="~/images/logo.png" alt="">
-						</a>
-					</div>
-				</div> <!-- /.col-md-4 -->
-				<div class="col-md-4 col-sm-4">
-					<div class="copyright">
-						<span>
-
-							Copyright &copy; 2014 <a href="#">Company Name</a>
-
-
-							<!--
-							| Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a>
-							-->
-
-						</span>
-					</div>
-				</div> <!-- /.col-md-4 -->
-				<div class="col-md-4 col-sm-4">
-					<ul class="social-icons">
-						<li><a href="#" class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-linkedin"></a></li>
-						<li><a href="#" class="fa fa-flickr"></a></li>
-						<li><a href="#" class="fa fa-rss"></a></li>
-					</ul>
-				</div> <!-- /.col-md-4 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.site-footer -->
-
-
-
-
-
-
-
-
-	@*<script>
-		document.querySelector("#DepartureCitytxt").addEventListener("keyup", function () {
-			var xhr = new XMLHttpRequest();
-			xhr.open("get", "CountryHandler.ashx?cityname=" + this.value);
-			xhr.send();
-
-			xhr.addEventListener("load", function () {
-
-				if (xhr.status == 200) {
-					var message = xhr.responseText;
-					var JSP = JSON.parse(message);
-					var Docfrag = document.createDocumentFragment();
-					var txt = document.querySelector("#DepartureCitytxt");
-					var theUi = document.querySelector("#ulID");
-					theUi.style.display = "block";
-					for (var i = 0; i <= JSP.length - 1; i++) {
-						var eleli = document.createElement("li");
-						var eletxt = document.createTextNode(JSP[i]);
-						eleli.style.backgroundColor = "white";
-						eleli.appendChild(eletxt);
-
-						eleli.addEventListener("mouseover", function () {
-							this.style.backgroundColor = "yellow";
-						})
-						eleli.addEventListener("mouseout", function () {
-							this.style.backgroundColor = "white";
-
-						})
-						eleli.addEventListener("click", function () {
-							txt.value = this.firstChild.nodeValue;
-							theUi.style.display = "none";
-
-						})
-
-						Docfrag.appendChild(eleli);
-					}
-
-					while (theUi.hasChildNodes()) {
-						theUi.removeChild(theUi.lastChild);
-					}
-
-
-					theUi.appendChild(Docfrag);
-				}
-			})
-
-		})
-
-		document.querySelector("#DestinationCitytxt").addEventListener("keyup", function () {
-			var xhr = new XMLHttpRequest();
-			xhr.open("get", "CountryNameHandler1.ashx?cityname=" + this.value);
-			xhr.send();
-
-			xhr.addEventListener("load", function () {
-
-				if (xhr.status == 200) {
-					var message = xhr.responseText;
-					var JSP = JSON.parse(message);
-					var Docfrag = document.createDocumentFragment();
-					var txt = document.querySelector("#DestinationCitytxt");
-					var theUi = document.querySelector("#ulID2");
-					theUi.style.display = "block";
-					for (var i = 0; i <= JSP.length - 1; i++) {
-						var eleli = document.createElement("li");
-						var eletxt = document.createTextNode(JSP[i]);
-						eleli.style.backgroundColor = "white";
-						eleli.appendChild(eletxt);
-
-						eleli.addEventListener("mouseover", function () {
-							this.style.backgroundColor = "yellow";
-						})
-						eleli.addEventListener("mouseout", function () {
-							this.style.backgroundColor = "white";
-
-						})
-						eleli.addEventListener("click", function () {
-							txt.value = this.firstChild.nodeValue;
-							theUi.style.display = "none";
-
-						})
-
-						Docfrag.appendChild(eleli);
-					}
-
-					while (theUi.hasChildNodes()) {
-						theUi.removeChild(theUi.lastChild);
-					}
-
-
-					theUi.appendChild(Docfrag);
-				}
-			})
-
-		})
-
-		document.querySelector("#DepartureCitytxt2").addEventListener("keyup", function () {
-			var xhr = new XMLHttpRequest();
-			xhr.open("get", "~/CountryNameHandler1.ashx?cityname=" + this.value);
-			xhr.send();
-
-			xhr.addEventListener("load", function () {
-
-				if (xhr.status == 200) {
-					var message = xhr.responseText;
-					var JSP = JSON.parse(message);
-					var Docfrag = document.createDocumentFragment();
-					var txt = document.querySelector("#DepartureCitytxt2");
-					var theUi = document.querySelector("#ulID3");
-					theUi.style.display = "block";
-					for (var i = 0; i <= JSP.length - 1; i++) {
-						var eleli = document.createElement("li");
-						var eletxt = document.createTextNode(JSP[i]);
-						eleli.style.backgroundColor = "white";
-						eleli.appendChild(eletxt);
-
-						eleli.addEventListener("mouseover", function () {
-							this.style.backgroundColor = "yellow";
-						})
-						eleli.addEventListener("mouseout", function () {
-							this.style.backgroundColor = "white";
-
-						})
-						eleli.addEventListener("click", function () {
-							txt.value = this.firstChild.nodeValue;
-							theUi.style.display = "none";
-
-						})
-
-						Docfrag.appendChild(eleli);
-					}
-
-					while (theUi.hasChildNodes()) {
-						theUi.removeChild(theUi.lastChild);
-					}
-
-
-					theUi.appendChild(Docfrag);
-				}
-			})
-
-		})
-
-
-
-
-		document.querySelector("#DestinationCitytxt2").addEventListener("keyup", function () {
-			var xhr = new XMLHttpRequest();
-			xhr.open("get", "CountryHandler.ashx?cityname=" + this.value);
-			xhr.send();
-
-			xhr.addEventListener("load", function () {
-
-				if (xhr.status == 200) {
-					var message = xhr.responseText;
-					var JSP = JSON.parse(message);
-					var Docfrag = document.createDocumentFragment();
-					var txt = document.querySelector("#DestinationCitytxt2");
-					var theUi = document.querySelector("#ulID4");
-					theUi.style.display = "block";
-					for (var i = 0; i <= JSP.length - 1; i++) {
-						var eleli = document.createElement("li");
-						var eletxt = document.createTextNode(JSP[i]);
-						eleli.style.backgroundColor = "white";
-						eleli.appendChild(eletxt);
-
-						eleli.addEventListener("mouseover", function () {
-							this.style.backgroundColor = "yellow";
-						})
-						eleli.addEventListener("mouseout", function () {
-							this.style.backgroundColor = "white";
-
-						})
-						eleli.addEventListener("click", function () {
-							txt.value = this.firstChild.nodeValue;
-							theUi.style.display = "none";
-
-						})
-
-						Docfrag.appendChild(eleli);
-					}
-
-					while (theUi.hasChildNodes()) {
-						theUi.removeChild(theUi.lastChild);
-					}
-
-
-					theUi.appendChild(Docfrag);
-				}
-			})
-
-		})
-
-
-		//Mutation Observer API start
-
-		function mutate(mutations) {
-			var getvalue = mutations[1].target.innerText;
-			console.log(getvalue);
-			document.querySelector('#childcountinput').value = getvalue;
-			//mutations.forEach(function (mutation) {
-			//	console.log(mutation);
-			//});
-		}
-
-
-		var target = document.querySelector('#childdiv');
-		var observer = new MutationObserver(mutate);
-		var config = { characterData: false, attributes: false, childList: true, subtree: false };
-
-		observer.observe(target, config);
-
-
-		function mutate1(mutations) {
-			var getvalue = mutations[1].target.innerText;
-			console.log(getvalue);
-			document.querySelector('#Adultcountinput').value = getvalue;
-			//mutations.forEach(function (mutation) {
-			//	console.log(mutation);
-			//});
-		}
-
-
-		var target2 = document.querySelector('#adultdiv');
-		var observer2 = new MutationObserver(mutate1);
-		var config2 = { characterData: false, attributes: false, childList: true, subtree: false };
-
-		observer2.observe(target2, config2);
-
-		//Mutation Observer API end
-
-
-
-
-
-
-
-	</script>*@
-
-
-
-
-
-
-
-	<!--<script src="js/vendor/jquery-1.11.0.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>-->
-	<!-- templatemo 409 travel -->
-	<!--script for portfolio 訂票頁面插件-->
-	<script src="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/jquery.js"></script>
-	<script src="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true   // 100% fit in a container
-			});
-		});
-	</script>
-	<!--//script for portfolio-->
-	<!-- Calendar -->
-	<link rel="stylesheet" href="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/jquery-ui.css">
-	<script src="~/Flight%20Ticket%20Booking%20a%20Flat%20Responsive%20Widget%20Template%20%20%20w3layouts_files/jquery-ui.js"></script>
-	<script>
-		$(function () {
-			$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
-		});
-	</script>
-	<!-- //Calendar -->
-	<!--quantity-->
-	<script>
-		$('.value-plus').on('click', function () {
-			var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
-			divUpd.text(newVal);
-
-		});
-
-		$('.value-minus').on('click', function () {
-			var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
-			if (newVal >= 0) divUpd.text(newVal);
-		});
-	</script>
-	<!--//quantity-->
-	<!--load more-->
-	<script>
-		$(document).ready(function () {
-			size_li = $("#myList li").size();
-			x = 1;
-			$('#myList li:lt(' + x + ')').show();
-			$('#loadMore').click(function () {
-				x = (x + 1 <= size_li) ? x + 1 : size_li;
-				$('#myList li:lt(' + x + ')').show();
-			});
-			$('#showLess').click(function () {
-				x = (x - 1 < 0) ? 1 : x - 1;
-				$('#myList li').not(':lt(' + x + ')').hide();
-			});
-		});
-	</script>
-	<!-- //load-more -->
-	<!--<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 430px; left: 732.117px; z-index: 1; display: none;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">May</span>&nbsp;<span class="ui-datepicker-year">2018</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">4</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">5</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">11</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">12</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">18</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">19</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">25</a></td><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default ui-state-highlight ui-state-hover" href="#">26</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2018"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div>-->
-
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="/images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div> <!-- /.col-md-4 -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="copyright">
+                        <span>
+
+                            Copyright &copy; 2014 <a href="#">Company Name</a>
+
+
+                            <!--
+                            | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a>
+                            -->
+
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <ul class="social-icons">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-flickr"></a></li>
+                        <li><a href="#" class="fa fa-rss"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
-

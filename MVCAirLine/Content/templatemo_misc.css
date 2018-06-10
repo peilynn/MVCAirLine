@@ -57,7 +57,7 @@ Template: 409 travel
 }
 
 .grabbing {
-    cursor: url(../images/grabbing.png) 8 8,move;
+    cursor: url(/images/grabbing.png) 8 8,move;
 }
 
 .owl-carousel .owl-wrapper,.owl-carousel .owl-item {

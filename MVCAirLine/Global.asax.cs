@@ -4,15 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Security;
+using System.Web.SessionState;
+using System.Web.Http;
 
 namespace MVCAirLine
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public class Global : HttpApplication
     {
-        protected void Application_Start()
+        void Application_Start(object sender, EventArgs e)
         {
+            // 應用程式啟動時執行的程式碼
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);            
         }
     }
 }
